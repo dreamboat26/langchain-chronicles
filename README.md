@@ -13,9 +13,9 @@ Welcome to the GitHub repository for the LangChain Chatbot with Streamlit GUI! T
 
 A RAG bot stands for Retrieval-Augmented Generation. This means we augment the knowledge of our LLM with new information that we pass in our prompt. We first vectorize all the text that we want to use as "augmented knowledge" and then look through the vectorized text to find the most similar text to our prompt. We then pass this text to our LLM as a prefix.
 
-For a clearer understanding, refer to the YouTube video tutorial, and see the diagram below that illustrates the process:
+For a clearer understanding, see the diagram below that illustrates the process:
 
-![RAG Diagram](path_to_your_diagram_image) <!-- Replace with the actual path to your diagram image -->
+![HTML-rag-diagram](https://github.com/user-attachments/assets/f38963e4-33b7-4b03-af5e-0ef64600d8fe)
 
 ## Installation
 
