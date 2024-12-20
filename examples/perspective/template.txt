@@ -1,0 +1,28 @@
+The blog post should follow this structured format for thought leadership:
+
+1. Opening Hook & Context (1 section)
+   - Start with a compelling question or observation
+   - Establish relevance to current industry discourse
+   - Present author's unique perspective/thesis
+   - Maximum 150 words
+
+2. Core Concept Definition (1 section)
+   - Clear definition of the main concept
+   - Acknowledgment of definition challenges
+   - Author's technical perspective
+   - Alternative viewpoints or industry context
+   - Maximum 200 words
+
+3. Future Outlook (1 section)
+   - Industry implications
+   - Future challenges or opportunities
+   - Call to action or next steps
+   - Maximum 150 words
+
+Style Guidelines:
+- Use conversational, authoritative tone
+- Include 💡 for key insights
+- Include relevant examples throughout
+- Balance technical depth with accessibility
+- Connect to broader industry trends
+- Encourage discussion and debate

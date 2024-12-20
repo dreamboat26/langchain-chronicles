@@ -1,0 +1,44 @@
+The blog post should follow this structured format for product updates:
+
+1. Executive Summary (max 1 section)
+   - Brief context/background of the product/feature
+   - Clear statement of what's being announced
+   - Key value proposition
+   - Maximum 150 words
+
+2. Product Context & Evolution (1 section)
+   - Historical context or problem being solved
+   - Journey to current solution
+   - Why this update matters
+   - Maximum 200 words
+
+3. Core Announcement (1 section)
+   - Section that outlines the feature/update, including:
+     * Detailed feature description
+     * Technical capabilities
+     * Real-world use cases
+     * Customer testimonials (if available, otherwise leave placeholder)
+   - Maximum 250 words
+
+4. Implementation Details (1 section)
+   - How to get started
+   - Technical requirements
+   - Integration steps
+   - Code examples or configuration details
+   - Maximum 250 words
+
+5. Closing (1 section)
+   - Summary of benefits
+   - Future roadmap hints (optional)
+   - Clear call to action
+   - Additional resources and links
+   - Contact information
+   - Maximum 150 words
+
+Style Guidelines:
+- Use ### for section headers
+- Include EXACTLY 5 sections, as shown above
+- Leave placeholders for customer quotes in blockquotes
+- Start with any important updates/edits at the top
+- Include relevant links in the closing section
+- Use bullet points for feature lists

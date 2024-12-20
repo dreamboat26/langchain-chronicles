@@ -1,0 +1,26 @@
+so I want to write a blog post about agents 
+
+we get this question all the time at Langchain 
+
+first the question is what actually is an agent?
+
+one simple definition is that an agent uses an LLM to determine the control flow of an application 
+
+but, there's a spectrum of agents, kind of of like levels of autonomy with self-driving cars 
+
+Andrew Ng had a good tweet on this where he suggested that rather than arguing over which word to include or exclude as being a true AI agent we can acknowledge that there are just different degrees to which systems can be agentic 
+
+in the simple case you can think about a router, where the agent chooses between a new specific steps 
+
+as we get more complex, an agent can have looping where it can decide to continue a loop or break out of it to finish the task 
+
+the most advanced case, as we see in the Voyager paper, is an agent that actually builds its own tools 
+
+now, the more agentic your system is the more an orchestration framework can help 
+
+this is because there is more surface area for mistakes, which can cost tokens or latency
+
+frameworks like LangGraph can help because there is built-in support for features to support building more complex agents, such as human in the loop, short/long-term memory, and streaming 
+
+similarly, frameworks like Langsmith can help with testing and observability for complex agents 
+
