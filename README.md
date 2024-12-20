@@ -1,4 +1,4 @@
-# reply gAI
+# Reply gAI
 
 Reply gAI is an AI clone for any X profile. It automatically collects a user's Tweets, stores them in long-term memory, and uses Retrieval-Augmented Generation (RAG) to generate responses that match their unique writing style and viewpoints.
 
@@ -22,12 +22,6 @@ git clone https://github.com/langchain-ai/reply_gAI.git
 cd reply_gAI
 uvx --refresh --from "langgraph-cli[inmem]" --with-editable . --python 3.11 langgraph dev
 ```
-
-You should see the following output and Studio will open in your browser:
-
-- 🚀 API: http://127.0.0.1:2024
-- 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
-- 📚 API Docs: http://127.0.0.1:2024/docs
 
 In the `configuration` tab, add the Twitter/X handle of any user: 
 
@@ -65,22 +59,6 @@ In the quickstart, we use a [locally running LangGraph server](https://langchain
 
 This uses the `langraph dev` command, which [launches the server in development mode](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#dev). 
 
-Tweets are saved to the [LangGraph store](https://langchain-ai.github.io/langgraph/concepts/persistence/#memory-store), which uses Postgres for persistence and is saved in the `.langgraph_api/` folder in this directory. 
-
 You can visualize Tweets saved per each user in the Store directly with LangGraph Studio:
 
 ![Screenshot 2024-12-11 at 1 31 09 PM](https://github.com/user-attachments/assets/41a06245-0659-4309-b7e5-e78a2f108c2b)
-
-## Deployment 
-
-If you want to want to launch the server in a mode suitable for production, you can consider [LangGraph Cloud](https://langchain-ai.github.io/langgraph/cloud/quick_start/#langgraph-cloud-quick-start):
-
-* Add `LANGSMITH_API_KEY` to your `.env` file.
-* Ensure [Docker](https://docs.docker.com/engine/install/) is running on your machine.
-* [Run with `langgraph up`](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#up)
-
-```bash
-luvx --refresh --from "langgraph-cli[inmem]" --with-editable . --python 3.11 langgraph up
-```
-
-See [Module 6](https://github.com/langchain-ai/langchain-academy/tree/main/module-6) of LangChain Academy for a detailed walkthrough of deployment options with LangGraph.
