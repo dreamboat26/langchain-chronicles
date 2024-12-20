@@ -1,6 +1,6 @@
-# Research Rabbit 🐰
+# Research Assistant Agent
 
-Research Rabbit is a web research and summarization assistant that autonomously goes down the rabbit-hole of any user-defined topic. It uses an LLM to generate a search query based on the user's topic, gets web search results, and uses an LLM to summarize the results. It then uses an LLM to reflect on the summary, examines knowledge gaps, and generates a new search query to fill the gaps. This repeats for a user-defined number of cycles, updating the summary with new information from web search and provided the user a final markdown summary with all sources used. It is configured to run with fully local LLMs (via [Ollama](https://ollama.com/search))! 
+Research Assistant is a web research and summarization assistant that autonomously goes down the rabbit-hole of any user-defined topic. It uses an LLM to generate a search query based on the user's topic, gets web search results, and uses an LLM to summarize the results. It then uses an LLM to reflect on the summary, examines knowledge gaps, and generates a new search query to fill the gaps. This repeats for a user-defined number of cycles, updating the summary with new information from web search and provided the user a final markdown summary with all sources used. It is configured to run with fully local LLMs (via [Ollama](https://ollama.com/search))! 
 
 ![research-rabbit](https://github.com/user-attachments/assets/4308ee9c-abf3-4abb-9d1e-83e7c2c3f187)
 
@@ -24,21 +24,6 @@ cd research-rabbit
 uvx --refresh --from "langgraph-cli[inmem]" --with-editable . --python 3.11 langgraph dev
 ```
 
-You should see the following output and Studio will open in your browser:
-> Ready!
-> 
-> API: http://127.0.0.1:2024
-> 
-> Docs: http://127.0.0.1:2024/docs
-> 
-> LangGraph Studio Web UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
-
-Open `LangGraph Studio Web UI` via the URL in the output above. 
-
-In the `configuration` tab:
-* You can set the name of your local LLM to use with Ollama (it will by default be `llama3.2`) 
-* You can set the depth of the research iterations (it will by default be `3`)
-
 ![Screenshot 2024-12-05 at 3 23 46 PM](https://github.com/user-attachments/assets/3c328426-b107-4ed5-82a5-625193f18435)
 
 Give the assistant a topic for research, and you can visualize its process!
@@ -47,7 +32,6 @@ Give the assistant a topic for research, and you can visualize its process!
 
 ## How it works
 
-Research Rabbit is a AI-powered research assistant that:
 - Given a user-provided topic, uses a local LLM (via [Ollama](https://ollama.com/search)) to generate a web search query
 - Uses a search engine (configured for [Tavily](https://www.tavily.com/)) to find relevant sources
 - Uses a local LLM to summarize the findings from web search related to the user-provided research topic
@@ -64,16 +48,6 @@ The output of the graph is a markdown file containing the research summary, with
 
 All sources gathered during research are saved to the graph state. 
 
-You can visualize them in the graph state, which is visible in LangGraph Studio:
-
 ![Screenshot 2024-12-05 at 4 08 59 PM](https://github.com/user-attachments/assets/e8ac1c0b-9acb-4a75-8c15-4e677e92f6cb)
 
-The final summary is saved to the graph state as well: 
-
 ![Screenshot 2024-12-05 at 4 10 11 PM](https://github.com/user-attachments/assets/f6d997d5-9de5-495f-8556-7d3891f6bc96)
-
-## Deployment Options
-
-There are [various ways](https://langchain-ai.github.io/langgraph/concepts/#deployment-options) to deploy this graph.
-
-See [Module 6](https://github.com/langchain-ai/langchain-academy/tree/main/module-6) of LangChain Academy for a detailed walkthrough of deployment options with LangGraph.
