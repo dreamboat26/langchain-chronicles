@@ -1,43 +1,8 @@
 # Fine-Tune BERT For Question Answering
 
-<div align="center">
-    <a href="">
-        <img alt="open-source-image"
-        src="https://img.shields.io/badge/Open%20Source%20❤%EF%B8%8F-%2325A162.svg?style=flat"
-        style="height: 30px"/>
-    </a>
-    <a href="https://youtu.be/gHsm1F2muiM">
-        <img alt="youtube-tutorial"
-        src="https://img.shields.io/badge/YouTube Tutorial-%23FF0000.svg?logo=youtube&logoColor=white&style=flat"
-        style="height: 30px"/>
-    </a>
-</div>
-<div align="center">
-    <a href="https://www.buymeacoffee.com/uygarkurt" target="_blank">
-        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" 
-        style="height: 45px"/>
-    </a>
-</div>
-<br/>
-<div align="center">
-    <p>Liked our work? give us a ⭐!</p>
-</div>
-<p align="center">
-  <img src="./assets/qa-sample.png" height="70%%" width="70%%"/>
-</p>
-
 This repository contains an easy-to-use and understand code to fine-tune BERT for Question-Answering(Q&A) with option to use [LoRA](https://github.com/microsoft/LoRA). Sample training was made by using [SQuAD Dataset](https://rajpurkar.github.io/SQuAD-explorer/). Dataset preparation part was inspired from [HuggingFace Tutorial](https://huggingface.co/transformers/v3.2.0/custom_datasets.html#question-answering-with-squad-2-0).
 
 Above example demonstrates a sample context, question and answer. 
-
-### YouTube Tutorials
-This repository also contains a corresponding YouTube tutorials. 
-
-To implement the main Q&A code check this video: **Fine-Tune BERT For Question-Answering(Q&A) - PyTorch & HuggingFace**
-[![Thumbnail](./assets/youtube-thumbnail.png)](https://www.youtube.com/watch?v=PikqVppe408&t=9s)
-
-To learn more about LoRA, see how it's implemented in this repository and view the experiments check this video: **LoRA BERT vs Non-LoRA BERT: Comparison and Implementation**
-[![Thumbnail](./assets/lora-thumbnail.png)](https://www.youtube.com/watch?v=gHsm1F2muiM&t=8s)
 
 ### Project Structure
 Project structured as follows:
@@ -82,8 +47,6 @@ Comparion of LoRA BERT and Non-LoRA BERT by training time and GPU utility given 
 | Inference Latency    | 0.14 Seconds    | 0.14 Seconds    |
 | Trainable Parameters | 108893186       | 592900          |
 
-### Pre-Trained Models
-You can download sample pre-trained models for [LoRA BERT](https://drive.google.com/file/d/1JfUJnAIupcaEv6PKzVOoB0Lsk1wv_q1Y/view?usp=sharing) and [Non-LoRA BERT](https://drive.google.com/file/d/1aIcI_9RRWVUJHts5ZgsKDuH4HjVFe467/view?usp=sharing). Put the models into the `models/` directory where `inference.py` natively points to. Note that these sample models were trained on 20000 samples of the whole dataset.
 
 ### Inference
 `inference.py` file provides easy pipeline to use. Change the `context` and `question` variables based on your need. Change the `MODEL_PATH` variable inside the pipeline to point to your trained model. If you want to use the LoRA model change `LORA` variable to `True`.
