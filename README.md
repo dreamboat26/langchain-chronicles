@@ -12,60 +12,6 @@ The following steps will guide you on how to run the application on macOS/Linux.
 - virtualenv
 - Homebrew
 
-### Installation
-
-1. Clone the repository
-
-```
-git clone https://github.com/menloparklab/langchain-cohere-qdrant-doc-retrieval docQA
-```
-
-2. Change into the directory
-
-```
-cd docQA
-```
-
-3. Create and activate a virtual environment
-
-```
-python3 -m venv env
-source env/bin/activate
-```
-
-4. Install the required packages
-
-```
-pip install -r requirements.txt
-```
-
-Unstructured uses detectron which is installed as below:
-
-```
-pip install "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.6#egg=detectron2"
-```
-
-5. Install Homebrew 
-
-Follow the installation guide on [Homebrew website](https://brew.sh/).
-
-6. Install the following brew packages
-
-```
-brew install libmagic poppler tesseract libxml2 libxslt
-```
-
-7. Create a `.env` file and set the following environment variables:
-
-```
-cohere_api_key="insert here"
-openai_api_key="insert here"
-qdrant_url="insert here"
-qdrant_api_key="insert here"
-```
-
-Replace the values with your own API keys and Qdrant URL.
-
 ##### Qdrant url and api keys
 
 Please signup for a free cloud-based account of [Qdrant](https://qdrant.tech/) and create a new cluster. You will then be able to get the qdrant_url and qdrant_api_key used in the section above.
@@ -135,6 +81,3 @@ Retrieve JSON for bubble:
 }
 `
 <br>
-
-Feel free to reach out if any questions on [Twitter](https://twitter.com/MisbahSy)
-
