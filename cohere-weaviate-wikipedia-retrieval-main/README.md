@@ -16,48 +16,6 @@ To use this project, you will need to have the following installed on your machi
 - pip
 - virtualenv
 
-### Installing
-
-To install and run this project on your local machine, follow these steps:
-
-1. Clone the repository onto your machine using the following command:
-
-```
-git clone https://github.com/menloparklab/cohere-weviate-wikipedia-retrieval
-```
-
-2. Create a virtual environment for the project using the following command:
-
-```
-python3 -m venv venv
-```
-
-3. Activate the virtual environment using the following command:
-
-```
-source venv/bin/activate
-```
-
-4. Install the project dependencies using the following command:
-
-```
-pip install -r requirements.txt
-```
-
-5. Create a `.env` file in the root directory of the project and add your API keys. You can use the `.env.copy` file as a template.
-
-    Weaviate api keys and url are left intentionally. These are read only api provided by Weaviate for demo purposes.
-
-6. To test your output and results, use the provided jupyter notebook. You can easily run this in Colab as well.
-
-
-
-7. To start the API routes using Flask, run the following command:
-
-```
-gunicorn app:app
-```
-
 ### Below are the endpoints and examples to call them
 
 1. `/retrieve`
