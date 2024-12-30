@@ -1,11 +1,5 @@
 # LangGraphJourney
 
-Open in Colab: <a target="_blank" href="https://colab.research.google.com/github/menloparklab/LangGraphJourney/blob/main/LangGraphLearning.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-
-It accompanies a youtube tutorial at: https://youtu.be/R8KB-Zcynxc
-
 # LangGraph Tutorial
 
 This tutorial provides a step-by-step guide on how to use LangGraph, a tool developed by the LangChain team to build Agent apps. LangGraph allows you to create graphs and call them, enabling you to create complex applications powered by LangChain.
@@ -43,7 +37,3 @@ This tutorial provides a step-by-step guide on how to use LangGraph, a tool deve
 - Explanation of the conditional edge in a graph
 - Instructions on defining conditional behavior in the graph's functions
 - Implementation of the conditional edge in the graph
-
-## Conclusion
-
-Hope you get a good understanding of LangGraph. Reach out on [Twitter](https://twitter.com/MisbahSy) if any questions
